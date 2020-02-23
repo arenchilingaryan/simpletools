@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import WeatherApp from './components/weather-app/weather-app';
+import TicTacToe from './components/tic-tac-toe/tic-tac-toe';
+import { BrowserRouter, Route } from 'react-router-dom';
+import NavBar from './components/nav/nav';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () => {
+    return (
+        <BrowserRouter>
+            <NavBar />
+            <Route path="/weather" component={WeatherApp} />
+            <Route path="/tictactoe" component={TicTacToe} />
+        </BrowserRouter>
+    )
 }
 
 export default App;

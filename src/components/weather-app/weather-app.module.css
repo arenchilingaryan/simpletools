@@ -1,0 +1,27 @@
+.weatherApp {
+    font-family: 'Open Sans', ;
+    position: relative;
+    width: 740px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;    
+}
+@media (max-width: 850px) {
+    .weatherApp {
+        width: 500px;
+    }
+}
+@media (max-width: 600px) {
+    .weatherApp {
+        width: 350px;
+    }
+}
+@media (max-width: 440px) {
+    .weatherApp {
+        width: 180px;
+        font-size: 10px;
+        text-align: center;
+    }
+}

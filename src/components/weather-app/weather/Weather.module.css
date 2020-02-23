@@ -1,0 +1,7 @@
+.mainInfo {
+    background-color: rgba(235, 104, 100, .9);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, .9);
+}

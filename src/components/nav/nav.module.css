@@ -1,0 +1,39 @@
+.header {
+    height: 50px;
+    width: 760px;
+    margin: 0 auto;
+    padding: 30px 20px 0 20px;
+    background-color: rgba(235, 104, 100, .9);
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    border-radius: 1px;
+}
+.item {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .9);
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.item:focus {
+    color: #333;
+    transition: .3s;
+}
+
+@media (max-width: 850px) {
+    .header {
+        width: 500px;
+    }
+}
+@media (max-width: 600px) {
+    .header {
+        width: 350px;
+    }
+}
+@media (max-width: 440px) {
+    .header {
+        width: 200px;
+        font-size: 10px;
+    }
+}
